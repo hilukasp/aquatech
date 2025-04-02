@@ -12,7 +12,9 @@ body{
 :root{
     --tamanho-header:80px;
     --tamanho-footer:98px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px)
+    /* --tamanho-banner: calc(100vh - var(--tamanho-header)  - 2px); */
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    /* --tamanho-container: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px) */
 }
 
 .header{
@@ -108,6 +110,62 @@ a{
 .box>img{
     max-width: 170px;
 }
+/* container */
+.login> .container{
+    height: var(--tamanho-container);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login{
+    background-color: #ffe8c6;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    color: #ff4141;
+}
+.card-cadastro{
+    background-color: #ffe8c6;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    color: #ff4141;
+}
+.formulario{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.campo{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 20px;
+}
+button{
+    width: 100px;
+    background-color: rgb(255, 49, 49);
+    margin: auto;
+    border: none;
+    color: white;
+    padding: 10px;
+
+}
+.campo>input{
+    padding: 5px;
+    padding-right: 150px;
+    border-color: #32b9cd;
+    border-radius: 10px;
+}
+
+/* footer */
 
 .footer{
     background-color: #32b9cd;
